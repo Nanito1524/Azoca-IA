@@ -1,0 +1,196 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #545454; /* Color de fondo */
+  color: white; /* Color del texto */
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Espacia el logo y la barra de navegación */
+  padding: 1rem 2rem; /* Añade espacio alrededor del contenido */
+  font-size: 110%; /* Escala todo el texto en el header */
+}
+
+/* Logo */
+header img {
+  height: 120px; /* Tamaño del logo */
+}
+
+/* Barra de navegación */
+header nav {
+  display: flex; /* Alinea los enlaces en una fila */
+  gap: 1.5rem; /* Espacio entre los enlaces */
+}
+
+/* Estilo de los enlaces */
+header nav a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: white; /* Color del texto */
+  font-size: 1.2rem; /* Escala el tamaño de los enlaces */
+  font-weight: bold; /* Hace que el texto sea más prominente */
+  padding: 0.5rem 1rem; /* Espaciado interno */
+  border: 2px solid transparent; /* Inicialmente sin borde visible */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Suaviza las animaciones */
+}
+
+/* Efecto hover en los enlaces */
+header nav a:hover {
+  background-color: white; /* Cambia el fondo al pasar el ratón */
+  color: #ff7b00; /* Cambia el texto a naranja */
+  border-color: white; /* Resalta el borde */
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('Fondo\ selec.png') no-repeat center center/cover;
+  color: rgb(253, 124, 4);
+  text-align: center;
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #ff7b00;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff5a00;
+}
+
+/* Beneficios */
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.benefit {
+  text-align: center;
+  max-width: 250px;
+}
+
+.benefit img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.benefit h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Cómo Funciona */
+.how-it-works {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem 2rem;
+  background-color: #fafafa;
+}
+
+.step {
+  text-align: center;
+  width: 25%;
+}
+
+.step img {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Testimonios */
+.testimonials {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Precios */
+.pricing {
+  background-color: #545454;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Pie de Página */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits, .how-it-works {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefit, .step {
+    margin-bottom: 2rem;
+    max-width: 80%;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+</style>
