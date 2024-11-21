@@ -48,7 +48,7 @@ header nav a:hover {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: url('Fondo\ selec.png') no-repeat center center/cover;
+  background: url('./img/Fondoselec.png') no-repeat center center/cover;
   color: rgb(253, 124, 4);
   text-align: center;
   padding-top: 10rem;
@@ -193,4 +193,4 @@ footer a {
     font-size: 1rem;
   }
 }
-</style>
+
